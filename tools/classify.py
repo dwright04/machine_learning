@@ -1,13 +1,12 @@
-import sys, optparse
+import sys, optparse, mlutils
 import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_curve, f1_score
 from sklearn import preprocessing
-#sys.path.insert(1, "/Users/dew/development/PS1-Real-Bogus/demos/")
-import mlutils
-sys.path.insert(1, "../../ufldl/")
+
+sys.path.insert(1, "../sparsefilter")
 from SoftMaxOnline import SoftMaxOnline
 from NeuralNet import SoftMaxClassifier
 try:
